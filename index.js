@@ -56,12 +56,9 @@ var db = require('./core/db')(app, twitter, config);
 
 
 // Bootstrap routes
-require('./core/routes')(app);
-
+require('./core/routes')(app, twitter);
 
 
 
 // expose app
 exports = module.exports = app;
-
-
